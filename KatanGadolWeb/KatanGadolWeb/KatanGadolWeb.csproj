@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OpenTK.dll.config" />
+    <Content Include="css\Heebo-VariableFont_wght.ttf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -142,12 +143,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Survivor\Survivor.csproj">
-      <Project>{2a062ff7-882e-47f1-acda-3bb89498789f}</Project>
-      <Name>Survivor</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

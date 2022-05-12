@@ -20,6 +20,11 @@ body {
 
 }
 
+img {
+    height: auto;
+    width: 178px;
+}
+
 #form1 {
     width: 70%;
     height: 95%;
@@ -77,8 +82,8 @@ div {
 }
 
 #tDiv {
-    font-size: 3em;
-    color: #4f4537;
+    align-self: center;
+    width: fit-content;
 }
 
 #title {

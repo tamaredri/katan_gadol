@@ -10,8 +10,9 @@
 <body>
     <form id="form1" runat="server">
         <div id="tDiv">
-            <img src="Images/Asset 21.png" style="height: 34px; width: 178px"/>
+            <img src="./Images/Asset 21.png"/>
         </div>
+        <hr />
         <div id="openDiv">
             <asp:Label ID="openingSection" runat="server">
                 ברוכים הבאים!
