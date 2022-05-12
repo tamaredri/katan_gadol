@@ -1,0 +1,118 @@
+﻿* {
+    direction: rtl;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8ea;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+#form1 {
+    width: 70%;
+    height: 95%;
+    overflow-y: scroll;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 3px 5px 11px 2px #d2cbbd;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #ddd3c5;
+    border-radius: 12px;
+}
+
+div {
+    width: 90%;
+    height: fit-content;
+    margin: .5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.divColumn {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.lable {
+    white-space: nowrap;
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+}
+
+.part1 {
+    width: 20%;
+}
+
+#tDiv {
+    font-size: 3em;
+    color: #4f4537;
+}
+
+#openDiv {
+}
+
+#title {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+}
+
+input:not([type=file]) {
+    height: 2rem;
+    border-radius: 15px;
+    outline: none;
+    border: 1.5px solid #ddd3c5;
+    padding: .5rem;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #4f4537;
+    border: 1.5px solid #4f4537;
+    width: 5rem;
+    margin: 1rem;
+}
+
+input::placeholder {
+    opacity: .5;
+}
+
+input:focus {
+    border: 1.5px solid #a49784;
+}
+
+hr {
+    width: 100%;
+}
+
+.aspNetHidden {
+    display: none;
+}
