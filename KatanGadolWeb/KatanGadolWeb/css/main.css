@@ -2,6 +2,8 @@
     direction: rtl;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Guttman Aharoni';
 }
 
 body {
@@ -45,8 +47,7 @@ body {
 
 div {
     width: 90%;
-    height: fit-content;
-    margin: .5rem 0;
+    height: 87px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -74,9 +75,12 @@ div {
 #tDiv {
     font-size: 3em;
     color: #4f4537;
+    object-position:center;
 }
 
 #openDiv {
+    position: center;
+    object-position: center;
 }
 
 #title {

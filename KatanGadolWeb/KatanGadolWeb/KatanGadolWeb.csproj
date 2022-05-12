@@ -112,6 +112,7 @@
   <ItemGroup>
     <Content Include="css\main.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Asset 21.png" />
     <Content Include="uploadePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -140,8 +141,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Survivor\Survivor.csproj">
+      <Project>{2a062ff7-882e-47f1-acda-3bb89498789f}</Project>
+      <Name>Survivor</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
