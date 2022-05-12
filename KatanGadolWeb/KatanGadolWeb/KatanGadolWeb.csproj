@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OpenTK.dll.config" />
+    <Content Include="css\Heebo-VariableFont_wght.ttf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -10,11 +10,20 @@
 <body>
     <form id="form1" runat="server">
         <div id="tDiv">
-            <img src="Images/Asset 21.png" style="height: 34px; width: 178px"/>
+            <img src="./Images/Asset 21.png"/>
         </div>
+        <hr />
         <div id="openDiv">
-            <asp:Label ID="openingSection" runat="server" Text="ברוכים הבאים"></asp:Label>
+            <asp:Label ID="openingSection" runat="server">
+                ברוכים הבאים!
+                <br />
+                רק פרטים קטנים והסרט שלכם מוכן:)
+                <br />
+                תודה לכם ולנו..
+            </asp:Label>
+
         </div>  
+            <hr />
         <div>
             <asp:Label CssClass="lable part1" ID="Name_Lable" runat="server" Text="שם האיש"></asp:Label>
             <asp:TextBox ID="Name" runat="server" placeholder="שם"></asp:TextBox>

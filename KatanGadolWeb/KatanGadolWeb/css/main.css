@@ -1,9 +1,12 @@
-﻿* {
+﻿@font-face {
+    font-family: "Heebo";
+    src: url("./Heebo-VariableFont_wght.ttf");
+}
+
+* {
     direction: rtl;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Heebo;
     box-sizing: border-box;
-    font-size: 20px;
-    font-family: 'Guttman Aharoni';
 }
 
 body {
@@ -17,8 +20,13 @@ body {
 
 }
 
+img {
+    height: auto;
+    width: 178px;
+}
+
 #form1 {
-    width: 50%;
+    width: 70%;
     height: 95%;
     overflow-y: scroll;
     border-radius: 12px;
@@ -47,7 +55,8 @@ body {
 
 div {
     width: 90%;
-    height: 87px;
+    height: fit-content;
+    margin: .5rem 0;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -73,20 +82,21 @@ div {
 }
 
 #tDiv {
-    font-size: 3em;
-    color: #4f4537;
-    object-position:center;
-}
-
-#openDiv {
-    position: center;
-    object-position: center;
+    align-self: center;
+    width: fit-content;
 }
 
 #title {
     justify-self: center;
     width: 100%;
     text-align: center;
+}
+
+#openingSection {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    text-align: center; 
 }
 
 input:not([type=file]) {
