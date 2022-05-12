@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="tDiv">
-            <asp:Label ID="title" runat="server" Text="קטן_גדול"></asp:Label>
+            <img src="Images/Asset 21.png" style="height: 34px; width: 178px"/>
         </div>
         <div id="openDiv">
             <asp:Label ID="openingSection" runat="server">
