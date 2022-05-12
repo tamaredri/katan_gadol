@@ -110,6 +110,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="component_video\France.mp4" />
+    <Content Include="component_video\Germany.mp4" />
+    <Content Include="component_video\Intro.mp4" />
+    <Content Include="component_video\Story.mp4" />
     <Content Include="css\main.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\Asset 21.png" />
@@ -142,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="final_video\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

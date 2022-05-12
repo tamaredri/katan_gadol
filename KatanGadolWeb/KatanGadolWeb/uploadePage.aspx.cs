@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace KatanGadolWeb
 {
@@ -10,9 +11,7 @@ namespace KatanGadolWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
-            NReco.VideoConverter.ConcatSettings set = new NReco.VideoConverter.ConcatSettings();
-            //ffMpeg.ConcatMedia(_fileNames, videoRootPath + tobename + ".mp4", NReco.VideoConverter.Format.mp4, set);
+            
         }
 
 
@@ -34,10 +33,21 @@ namespace KatanGadolWeb
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+
+            string[] filesToConcat = new string[]{
+                                                    photo.PostedFile.FileName,
+                                                    introVideo.PostedFile.FileName,
+                                                    conclusionPhoto.PostedFile.FileName};
+
+            var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
+            NReco.VideoConverter.ConcatSettings set = new NReco.VideoConverter.ConcatSettings();
+            ffMpeg.ConcatMedia(filesToConcat, "./component_video/" + "dugoStory" + ".mp4", NReco.VideoConverter.Format.mp4, set);
+            /*
             // put a video in the images folder
             string strFolder = Server.MapPath("./Images/");
             string strFilePath = strFolder + "story.mp4";
             storyVideo.PostedFile.SaveAs(strFilePath);
+            */
         }
     }
     #region web access class
