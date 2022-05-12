@@ -1,6 +1,11 @@
-﻿* {
+﻿@font-face {
+    font-family: "Heebo";
+    src: url("./Heebo-VariableFont_wght.ttf");
+}
+
+* {
     direction: rtl;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Heebo;
     box-sizing: border-box;
 }
 
@@ -16,7 +21,7 @@ body {
 }
 
 #form1 {
-    width: 50%;
+    width: 70%;
     height: 95%;
     overflow-y: scroll;
     border-radius: 12px;
@@ -76,13 +81,17 @@ div {
     color: #4f4537;
 }
 
-#openDiv {
-}
-
 #title {
     justify-self: center;
     width: 100%;
     text-align: center;
+}
+
+#openingSection {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    text-align: center; 
 }
 
 input:not([type=file]) {

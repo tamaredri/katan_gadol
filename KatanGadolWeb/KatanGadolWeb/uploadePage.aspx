@@ -13,8 +13,16 @@
             <asp:Label ID="title" runat="server" Text="קטן_גדול"></asp:Label>
         </div>
         <div id="openDiv">
-            <asp:Label ID="openingSection" runat="server" Text="טקסט פתיחה"></asp:Label>
+            <asp:Label ID="openingSection" runat="server">
+                ברוכים הבאים!
+                <br />
+                רק פרטים קטנים והסרט שלכם מוכן:)
+                <br />
+                תודה לכם ולנו..
+            </asp:Label>
+
         </div>  
+            <hr />
         <div>
             <asp:Label CssClass="lable part1" ID="Name_Lable" runat="server" Text="שם האיש"></asp:Label>
             <asp:TextBox ID="Name" runat="server" placeholder="שם"></asp:TextBox>
