@@ -22,6 +22,8 @@
             <asp:TextBox ID="Age" runat="server">גיל</asp:TextBox>
             <asp:Label ID="Age_Lable" runat="server" Text="גיל כיום"></asp:Label>
         </div>
+
+
         <div>
             <asp:DropDownList ID="residence" runat="server"/>
             <asp:Label ID="residence_Lable" runat="server" Text="מקום מגורים בזמן השואה"></asp:Label>
@@ -33,16 +35,21 @@
         </div>
 
         <div>
-            <asp:FileUpload ID="FileUpload2" runat="server" />
-            <asp:Label ID="Label4" runat="server" Text="סרטון 1- סיפור משמעותי מהשואה"></asp:Label>
+            <asp:FileUpload ID="conclusionPhoto" runat="server" />
+            <asp:Label ID="conclusionPhoto_Lable" runat="server" Text="תמונת סיכום"></asp:Label>
+        </div>
+
+        <div>
+            <asp:FileUpload ID="introVideo" runat="server" />
+            <asp:Label ID="introVideo_Lable" runat="server" Text="סרטון 1- סיפור משמעותי מהשואה"></asp:Label>
         </div>
 
         <div>
 
-            <asp:FileUpload ID="FileUpload3" runat="server" />
+            <asp:FileUpload ID="storyVideo" runat="server" />
             <asp:Label ID="Label8" runat="server" Text="סרטון 2- החיים שאחרי"></asp:Label>
         </div>
-        <asp:ImageButton ID="ImageButton1" runat="server" />
+        <asp:ImageButton ID="storyVideo_Label" runat="server" />
         <asp:Button ID="Button3" runat="server" Text="שלח" />
 
     </form>
