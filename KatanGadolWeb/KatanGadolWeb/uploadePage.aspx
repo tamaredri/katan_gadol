@@ -17,18 +17,18 @@
         </div>  
         <div>
             <asp:Label CssClass="lable part1" ID="Name_Lable" runat="server" Text="שם האיש"></asp:Label>
-            <asp:TextBox ID="Name" runat="server">שם</asp:TextBox>
+            <asp:TextBox ID="Name" runat="server" placeholder="שם"></asp:TextBox>
         </div>
         <div>
             <asp:Label CssClass="lable part1" ID="Age_Lable" runat="server" Text="גיל כיום"></asp:Label>
-            <asp:TextBox ID="Age" runat="server">גיל</asp:TextBox>
+            <asp:TextBox ID="Age" runat="server" placeholder="גיל"></asp:TextBox>
         </div>
 
         <hr />
 
         <div>
             <asp:Label CssClass="lable" ID="residence_Lable" runat="server" Text="מקום מגורים בזמן השואה"></asp:Label>
-            <asp:DropDownList ID="residence" runat="server"/>
+            <asp:TextBox ID="country" runat="server" placeholder="מגורים"></asp:TextBox>
         </div>
         <div>
             <asp:Label CssClass="lable" ID="photo_Label" runat="server" Text="תמונה של ניצול השואה "></asp:Label>
