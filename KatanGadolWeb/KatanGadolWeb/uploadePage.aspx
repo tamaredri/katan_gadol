@@ -51,7 +51,7 @@
             <asp:Label CssClass="lable" ID="Label8" runat="server" Text="סרטון 2- החיים שאחרי"></asp:Label>
             <asp:FileUpload ID="storyVideo" runat="server" />
         </div>
-        <asp:Button ID="Button3" runat="server" Text="שלח" />
+        <asp:Button ID="Button3" runat="server" Text="שלח" OnClick="Button3_Click" />
 
     </form>
 </body>

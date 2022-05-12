@@ -4,14 +4,15 @@ using System.Net;
 using System.Text;
 using System.Diagnostics;
 
-
 namespace KatanGadolWeb
 {
     public partial class uploadePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //IConversionResult result = Conversion.Concatenate(File.Create("converted", (int)FileMode.Create), introVideo.FileContent, storyVideo.FileContent, );
+            var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
+            NReco.VideoConverter.ConcatSettings set = new NReco.VideoConverter.ConcatSettings();
+            //ffMpeg.ConcatMedia(_fileNames, videoRootPath + tobename + ".mp4", NReco.VideoConverter.Format.mp4, set);
         }
 
 
@@ -30,6 +31,14 @@ namespace KatanGadolWeb
             Debug.WriteLine(myRequest.GetResponse());
         }
         #endregion
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            // put a video in the images folder
+            string strFolder = Server.MapPath("./Images/");
+            string strFilePath = strFolder + "story.mp4";
+            storyVideo.PostedFile.SaveAs(strFilePath);
+        }
     }
     #region web access class
     public class MyWebRequest
