@@ -5,51 +5,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div id="tDiv">
             <asp:Label ID="title" runat="server" Text="קטן_גדול"></asp:Label>
         </div>
-        <div>
+        <div id="openDiv">
             <asp:Label ID="openingSection" runat="server" Text="טקסט פתיחה"></asp:Label>
         </div>  
         <div>
+            <asp:Label CssClass="lable part1" ID="Name_Lable" runat="server" Text="שם האיש"></asp:Label>
             <asp:TextBox ID="Name" runat="server">שם</asp:TextBox>
-            <asp:Label ID="Name_Lable" runat="server" Text="שם האיש"></asp:Label>
         </div>
         <div>
+            <asp:Label CssClass="lable part1" ID="Age_Lable" runat="server" Text="גיל כיום"></asp:Label>
             <asp:TextBox ID="Age" runat="server">גיל</asp:TextBox>
-            <asp:Label ID="Age_Lable" runat="server" Text="גיל כיום"></asp:Label>
         </div>
 
+        <hr />
 
         <div>
+            <asp:Label CssClass="lable" ID="residence_Lable" runat="server" Text="מקום מגורים בזמן השואה"></asp:Label>
             <asp:DropDownList ID="residence" runat="server"/>
-            <asp:Label ID="residence_Lable" runat="server" Text="מקום מגורים בזמן השואה"></asp:Label>
         </div>
-
         <div>
+            <asp:Label CssClass="lable" ID="photo_Label" runat="server" Text="תמונה של ניצול השואה "></asp:Label>
             <asp:FileUpload ID="photo" runat="server" />
-            <asp:Label ID="photo_Label" runat="server" Text="תמונה של ניצול השואה "></asp:Label>
         </div>
 
         <div>
+            <asp:Label CssClass="lable" ID="conclusionPhoto_Lable" runat="server" Text="תמונת סיכום"></asp:Label>
             <asp:FileUpload ID="conclusionPhoto" runat="server" />
-            <asp:Label ID="conclusionPhoto_Lable" runat="server" Text="תמונת סיכום"></asp:Label>
         </div>
 
-        <div>
+        <hr />
+
+        <div class="divColumn">
+            <asp:Label CssClass="lable" ID="introVideo_Lable" runat="server" Text="סרטון 1- סיפור משמעותי מהשואה"></asp:Label>
             <asp:FileUpload ID="introVideo" runat="server" />
-            <asp:Label ID="introVideo_Lable" runat="server" Text="סרטון 1- סיפור משמעותי מהשואה"></asp:Label>
         </div>
 
-        <div>
-
+        <div class="divColumn">
+            <asp:Label CssClass="lable" ID="Label8" runat="server" Text="סרטון 2- החיים שאחרי"></asp:Label>
             <asp:FileUpload ID="storyVideo" runat="server" />
-            <asp:Label ID="Label8" runat="server" Text="סרטון 2- החיים שאחרי"></asp:Label>
         </div>
-        <asp:ImageButton ID="storyVideo_Label" runat="server" />
         <asp:Button ID="Button3" runat="server" Text="שלח" />
 
     </form>

@@ -42,15 +42,6 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label openingSection;
 
         /// <summary>
-        /// Name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Name;
-
-        /// <summary>
         /// Name_Lable control.
         /// </summary>
         /// <remarks>
@@ -60,13 +51,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label Name_Lable;
 
         /// <summary>
-        /// Age control.
+        /// Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Age;
+        protected global::System.Web.UI.WebControls.TextBox Name;
 
         /// <summary>
         /// Age_Lable control.
@@ -78,13 +69,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label Age_Lable;
 
         /// <summary>
-        /// residence control.
+        /// Age control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList residence;
+        protected global::System.Web.UI.WebControls.TextBox Age;
 
         /// <summary>
         /// residence_Lable control.
@@ -96,13 +87,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label residence_Lable;
 
         /// <summary>
-        /// photo control.
+        /// residence control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload photo;
+        protected global::System.Web.UI.WebControls.DropDownList residence;
 
         /// <summary>
         /// photo_Label control.
@@ -114,13 +105,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label photo_Label;
 
         /// <summary>
-        /// conclusionPhoto control.
+        /// photo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload conclusionPhoto;
+        protected global::System.Web.UI.WebControls.FileUpload photo;
 
         /// <summary>
         /// conclusionPhoto_Lable control.
@@ -132,13 +123,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label conclusionPhoto_Lable;
 
         /// <summary>
-        /// introVideo control.
+        /// conclusionPhoto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload introVideo;
+        protected global::System.Web.UI.WebControls.FileUpload conclusionPhoto;
 
         /// <summary>
         /// introVideo_Lable control.
@@ -150,13 +141,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label introVideo_Lable;
 
         /// <summary>
-        /// storyVideo control.
+        /// introVideo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload storyVideo;
+        protected global::System.Web.UI.WebControls.FileUpload introVideo;
 
         /// <summary>
         /// Label8 control.
@@ -168,13 +159,13 @@ namespace KatanGadolWeb
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// storyVideo_Label control.
+        /// storyVideo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton storyVideo_Label;
+        protected global::System.Web.UI.WebControls.FileUpload storyVideo;
 
         /// <summary>
         /// Button3 control.
