@@ -26,13 +26,13 @@ img {
 }
 
 #form1 {
+    font-size: large;
     width: 70%;
     height: 95%;
     overflow-y: scroll;
     border-radius: 12px;
     background-color: white;
     box-shadow: 3px 5px 11px 2px #d2cbbd;
-
     display: flex;
     flex-direction: column;
     align-items: center;

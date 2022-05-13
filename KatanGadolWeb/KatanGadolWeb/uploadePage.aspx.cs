@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using System.Diagnostics;
 using System.Collections.Generic;
+using NReco.VideoConverter;
 
 namespace KatanGadolWeb
 {
@@ -32,22 +33,32 @@ namespace KatanGadolWeb
         #endregion
 
         protected void Button3_Click(object sender, EventArgs e)
-        {
+        {          
+            // save the files in the directory
+            //string strFolder = Server.MapPath(@"C:\hackathon5\KatanGadol\KatanGadolWeb\inputVideos");
+            string strFolder = @"C:\hackathon5\KatanGadol\KatanGadolWeb\inputVideos";
+            string strFilePath = strFolder + @"\1.mp4";
+            introVideo.PostedFile.SaveAs(strFilePath);
+            //SplitVideo(strFilePath, strFilePath, 0, 5);
 
-            string[] filesToConcat = new string[]{
-                                                    photo.PostedFile.FileName,
-                                                    introVideo.PostedFile.FileName,
-                                                    conclusionPhoto.PostedFile.FileName};
-
-            var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
-            NReco.VideoConverter.ConcatSettings set = new NReco.VideoConverter.ConcatSettings();
-            ffMpeg.ConcatMedia(filesToConcat, "./component_video/" + "dugoStory" + ".mp4", NReco.VideoConverter.Format.mp4, set);
-            /*
-            // put a video in the images folder
-            string strFolder = Server.MapPath("./Images/");
-            string strFilePath = strFolder + "story.mp4";
+            strFilePath = strFolder + @"\2.mp4";
             storyVideo.PostedFile.SaveAs(strFilePath);
-            */
+            //SplitVideo(strFilePath, strFilePath, 0, 5);
+
+            File.CreateText(@"C:\hackathon5\KatanGadol\KatanGadolWeb\Done\Done.txt");
+        }
+
+        public void SplitVideo(string SourceFile, string DestinationFile, int StartTime, int EndTime)
+        {
+            var ffMpegConverter = new FFMpegConverter();
+            ffMpegConverter.ConvertMedia(SourceFile, null, DestinationFile, null,
+                new ConvertSettings()
+                {
+                    Seek = StartTime,
+                    MaxDuration = (EndTime - StartTime), // chunk duration
+                    VideoCodec = "copy",
+                    AudioCodec = "copy"
+                });
         }
     }
     #region web access class

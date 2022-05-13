@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="tDiv">
-            <img src="./Images/Asset 21.png"/>
+            <img src="./Images/Asset 21.png" />
         </div>
         <hr />
         <div id="openDiv">
@@ -22,8 +22,8 @@
                 תודה לכם ולנו..
             </asp:Label>
 
-        </div>  
-            <hr />
+        </div>
+        <hr />
         <div>
             <asp:Label CssClass="lable part1" ID="Name_Lable" runat="server" Text="שם האיש"></asp:Label>
             <asp:TextBox ID="Name" runat="server" placeholder="שם"></asp:TextBox>
@@ -52,12 +52,12 @@
         <hr />
 
         <div class="divColumn">
-            <asp:Label CssClass="lable" ID="introVideo_Lable" runat="server" Text="סרטון 1- סיפור משמעותי מהשואה"></asp:Label>
+            <asp:Label CssClass="lable" ID="introVideo_Lable" runat="server" Text="סרטון 1"></asp:Label>
             <asp:FileUpload ID="introVideo" runat="server" />
         </div>
 
         <div class="divColumn">
-            <asp:Label CssClass="lable" ID="Label8" runat="server" Text="סרטון 2- החיים שאחרי"></asp:Label>
+            <asp:Label CssClass="lable" ID="Label8" runat="server" Text="סרטון 2"></asp:Label>
             <asp:FileUpload ID="storyVideo" runat="server" />
         </div>
         <asp:Button ID="Button3" runat="server" Text="שלח" OnClick="Button3_Click" />
