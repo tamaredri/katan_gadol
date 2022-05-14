@@ -20,10 +20,10 @@ namespace ConcatnateVideo
                 if (File.Exists(@"C:\hackathon5\KatanGadol\KatanGadolWeb\Done\Done.txt"))
                 {
                     //File.Delete(@"C:\hackathon5\KatanGadol\KatanGadolWeb\Done\Done.txt");
-
+                    //File.Delete();
                     //get the files from the folder only if the done file id oploaded
-                    string[] filesToConcat = new string[] { @"C:\hackathon5\KatanGadol\KatanGadolWeb\inputVideos\1.mp4", @"C:\hackathon5\KatanGadol\KatanGadolWeb\inputVideos\1.mp4" }; //GetFilesToConvert(@"C:\hackathon5\KatanGadol\KatanGadolWeb\inputVideos");
-                    string dest = @"C:\hackathon5\KatanGadol\KatanGadolWeb\outputVideo\holocust.mp4";
+                    string[] filesToConcat = GetFilesToConvert(@"C:\hackathon5\KatanGadol\KatanGadolWeb\inputVideos");
+                    string dest = @"C:\hackathon5\KatanGadol\KatanGadolWeb\outputVideo\holocast.mp4";
 
                     // render the concatenated video
                     var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
