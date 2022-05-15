@@ -3,7 +3,7 @@
 
 It is a website to perpetuate the holocast in an easy way for the Z-generation.
 
-for now - the website can only recieve 2 .mp4 files, that has the same vdeo frame size,
+for now - the website can only recieve 2 .mp4 files, that has the same video frame size,
 and concatnate them into 1 video file.
 
 * using the NReco Nugget package for video editing (a wrapper for ffmpeg)
